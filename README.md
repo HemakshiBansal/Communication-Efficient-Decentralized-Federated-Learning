@@ -6,13 +6,6 @@ Multimodal Information Processing Systems (MIPS) Lab | Mentor: Prof. Rajesh Hegd
 
 This project implements a decentralized federated learning (DFL) framework designed to reduce communication overhead among clients while preserving model accuracy under non-IID data distributions. The framework simulates a 40-node decentralized network training a CNN on CIFAR-10 (with an additional MNIST experiment), using sparse communication instead of dense weight synchronization at every round.
 
-## Files
-
-| File | Description |
-|------|--------------|
-| `Final_Code.ipynb` | Complete simulation — MNIST prototype + full CIFAR-10 experiment (data partitioning, sparse DFL training loop, evaluation) |
-| `README.md` | Project description |
-
 ## Method
 
 - **Data partitioning:** Dirichlet-based non-IID partitioning of CIFAR-10 across 40 clients (`alpha = 0.3`)
